@@ -1,0 +1,4 @@
+services/users/node_modules
+services/users/dist
+shared/backend/node_modules
+shared/backend/dist

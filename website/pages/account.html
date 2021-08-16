@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Account &ndash; Footietracker</title>
+
+        <meta name="author" content="Sam Mckenzie" />
+        <meta name="description" content="Your Footietracker account details" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="alternate icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="alternate icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#ffc40d" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Open+Sans:wght@600&display=swap" as="style">
+
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a class="logo" href="/">
+                    <span class="full-link">
+                        <span>footie</span><span>tracker</span>
+                    </span>
+                    <span class="short-link">
+                        <span>f</span><span>t</span>
+                    </span>
+                </a>
+                <nav class="desktop-navigation">
+                    <ul class="normal-links">
+                        <li class="desktop-nav-link"><a href="/#features">Features</a></li>
+                        <li class="desktop-nav-link"><a href="/demo">Demo</a></li>
+                        <li class="desktop-nav-link"><a href="/#pricing">Pricing</a></li>
+                        <li class="desktop-nav-link logged-in"><a class="button" href="/account">My account</a></li>
+                    </ul>
+                    <ul id="user-links">
+                        <li class="desktop-nav-link"><a href="/login">Login</a></li>
+                        <li class="desktop-nav-link"><a class="button" href="/register/create-account">Subscribe</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>Your account</h1>
+
+            <section>
+                <h2>Basic details</h2>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" disabled />
+                </div>
+
+                <div>
+                    <label for="email">Referral &amp; discount code</label>
+                    <input name="referral-code" id="referral-code" type="text" disabled />
+                    <p>If someone uses this code, they get 15% off their monthly subscription and you get a 10% discount (on top of any other discounts you may already have).</p>
+                </div>
+
+                <div>
+                    <button class="black" id="view-billing-details">View billing details</button>
+                </div>
+
+                <div>
+                    <a href="https://docs.google.com/spreadsheets/d/" target="_blank" id="open-sheets" class="button black">Open Google Sheets document</a>
+                </div>
+            </section>
+
+            <section>
+                <h2>Security</h2>
+
+                <h3>Change password</h3>
+                <div>
+                    <button class="black" id="request-password-change">Send password change email</button>
+                    <p id="request-password-change-response"></p>
+                </div>
+
+                <h3>Change email</h3>
+                <div>
+                    <label for="new-email">New email</label>
+                    <input name="new-email" id="new-email" type="email" placeholder="mynewmail@gmail.com" />
+
+                    <label for="confirm-password">Confirm password</label>
+                    <input name="confirm-password" id="confirm-password" type="password" placeholder="password" />
+
+                    <button class="black" id="send-verification-email">Send verification email</button>
+                    <p id="send-email-verification-response"></p>
+                </div>
+
+                <div>
+                    <button id="logout" class="black">Logout</button>
+                </div>
+            </section>
+        </main>
+
+        <script async defer src="https://mysa.footietracker.com/latest.js"></script>
+        <noscript><img src="https://mysa.footietracker.com/noscript.gif" alt=""/></noscript>
+
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    </body>
+</html>

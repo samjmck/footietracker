@@ -1,0 +1,29 @@
+{
+   "author": "Sam Mckenzie",
+   "scripts": {
+      "build": "tsc",
+      "bas": "tsc; echo 'DEVELOPMENT MODE'; NODE_ENV=development node dist/services/pricing/src/main",
+      "start": "node dist/services/pricing/src/main",
+      "startdev": "echo 'DEVELOPMENT MODE'; NODE_ENV=development dist/services/pricing/src/main",
+      "lint": "./node_modules/.bin/tslint --project tsconfig.json --force",
+      "lintfix": "./node_modules/.bin/tslint --project tsconfig.json --fix --force"
+   },
+   "devDependencies": {
+      "@types/amqplib": "^0.5.13",
+      "@types/dotenv": "^6.1.1",
+      "@types/node": "^11.15.10",
+      "@types/puppeteer": "^1.20.4",
+      "@types/ws": "^6.0.4",
+      "typescript": "^3.8.3"
+   },
+   "dependencies": {
+      "@types/pg": "^7.14.3",
+      "amqplib": "^0.5.5",
+      "dotenv": "^8.2.0",
+      "handy-redis": "^1.8.0",
+      "moment": "^2.24.0",
+      "pg": "^8.2.1",
+      "puppeteer": "^1.20.0",
+      "ws": "^7.2.3"
+   }
+}

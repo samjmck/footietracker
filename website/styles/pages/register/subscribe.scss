@@ -1,0 +1,19 @@
+@import '../../layout/content';
+@import '../../modules/subscribe';
+
+main {
+    max-width: 1000px;
+    padding-bottom: 100px;
+
+    #using-mobile-device {
+        display: none;
+    }
+
+    div.subscribe {
+        margin-top: 50px;
+    }
+
+    input#coupon-code {
+        margin: 0 auto;
+    }
+}

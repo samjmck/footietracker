@@ -1,0 +1,8 @@
+/pricing /#pricing 302
+/home / 301
+/register /register/create-account 301
+/blog/* https://blog.footietracker.com/:splat 302
+/api/* https://api.footietracker.com/:splat 200
+/staging-api/* https://staging.api.footietracker.com/:splat 200
+/dev-api/* https://dev.api.footietracker.com/:splat 200
+/demo https://docs.google.com/spreadsheets/d/1toFM_uKgidbcprd1Ry4e-kwpNfGHJx8LfLmal6XxLDQ

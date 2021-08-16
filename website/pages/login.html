@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login &ndash; Footietracker</title>
+
+        <meta name="author" content="Sam Mckenzie" />
+        <meta name="description" content="Login to your Footietracker account" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="alternate icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="alternate icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#ffc40d" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Open+Sans:wght@600&display=swap" as="style">
+
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a class="logo" href="/">
+                    <span class="full-link">
+                        <span>footie</span><span>tracker</span>
+                    </span>
+                    <span class="short-link">
+                        <span>f</span><span>t</span>
+                    </span>
+                </a>
+                <nav class="desktop-navigation">
+                    <ul class="normal-links">
+                        <li class="desktop-nav-link"><a href="/#features">Features</a></li>
+                        <li class="desktop-nav-link"><a href="/demo">Demo</a></li>
+                        <li class="desktop-nav-link"><a href="/#pricing">Pricing</a></li>
+                        <li class="desktop-nav-link logged-in"><a class="button" href="/account">My account</a></li>
+                    </ul>
+                    <ul id="user-links">
+                        <li class="desktop-nav-link"><a href="/login">Login</a></li>
+                        <li class="desktop-nav-link"><a class="button" href="/register/create-account">Subscribe</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2>Login</h2>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" placeholder="john.doe@mail.com" />
+
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Password" />
+
+                    <p><a href="/forgot-password">Forgot password?</a></p>
+
+                    <button id="login-button" class="black" type="submit">Login</button>
+
+                    <p id="response"></p>
+                </div>
+            </section>
+        </main>
+
+        <script async defer src="https://mysa.footietracker.com/latest.js"></script>
+        <noscript><img src="https://mysa.footietracker.com/noscript.gif" alt=""/></noscript>
+
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    </body>
+</html>

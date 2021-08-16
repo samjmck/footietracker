@@ -1,0 +1,56 @@
+@import '../modules/responsive-side-padding';
+@import '../modules/colours';
+
+footer {
+    @extend %responsive-side-padding;
+
+    margin-top: 4em;
+    border-top: 1px solid #e4e4e4;
+    background-color: #efefef;
+    padding: 1em 0;
+
+    div.container {
+        @extend %max-width;
+
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    div.articles, div.legal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.legal {
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .content {
+        color: #5d5d5d;
+    }
+
+    p.title {
+        color: #313131;
+        font-family: 'Open Sans', sans-serif;
+        font-variant: small-caps;
+        text-transform: lowercase;
+        font-weight: 600;
+        font-size: 1.1em;
+        margin: 0;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        margin: 0.3em 0;
+    }
+
+    @media screen and (max-width: 900px) {
+        div.articles, div.legal {
+            flex-direction: column;
+        }
+    }
+}

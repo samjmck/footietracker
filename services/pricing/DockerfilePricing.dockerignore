@@ -1,0 +1,4 @@
+services/pricing/node_modules
+services/pricing/dist
+shared/backend/node_modules
+shared/backend/dist

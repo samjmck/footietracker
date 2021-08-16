@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Browser extension instructions &ndash; Footietracker</title>
+
+        <meta name="author" content="Sam Mckenzie" />
+        <meta name="description" content="Instructions regarding the Footietracker browser extension" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="alternate icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="alternate icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#ffc40d" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Open+Sans:wght@600&display=swap" as="style">
+
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a class="logo" href="/">
+                    <span class="full-link">
+                        <span>footie</span><span>tracker</span>
+                    </span>
+                    <span class="short-link">
+                        <span>f</span><span>t</span>
+                    </span>
+                </a>
+                <nav class="desktop-navigation">
+                    <ul class="normal-links">
+                        <li class="desktop-nav-link"><a href="/#features">Features</a></li>
+                        <li class="desktop-nav-link"><a href="/demo">Demo</a></li>
+                        <li class="desktop-nav-link"><a href="/#pricing">Pricing</a></li>
+                        <li class="desktop-nav-link logged-in"><a class="button" href="/account">My account</a></li>
+                    </ul>
+                    <ul id="user-links">
+                        <li class="desktop-nav-link"><a href="/login">Login</a></li>
+                        <li class="desktop-nav-link"><a class="button" href="/register/create-account">Subscribe</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>Browser extension information</h1>
+            <section>
+                <h2>Introduction</h2>
+                <div>
+                    <h3>What does it do?</h3>
+                    <p>
+                        When you click the update button in the Footietracker browser extension, your Google Sheets document will be updated with your Football Index portfolio data.
+                        This data consists of the players in your portfolio, their purchase dates, their quantities, etc.
+                    </p>
+                    <h3>How do I know it's safe?</h3>
+                    <p>
+                        Our browser extension is <a target="_blank" href="https://github.com/samjmckenzie/footietracker-extension">open-source</a> which means its code is publicly
+                        available and can be checked by other developers. We also include instructions on how to build the extension from the source code.
+                        The extensions have also been verified by the stores we have published it in and at no point will any credentials be sent to our servers.
+                    </p>
+                    <h3>Why is my portfolio data sent to Footietracker?</h3>
+                    <p>
+                        Our servers merely act as a middleman between you and Google Sheets. The portfolio data will be processed by our servers so your
+                        spreadsheet can be updated in an organised manner. At no point in time will any of your portfolio data be stored by us.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2>Installation</h2>
+                <div>
+                    <h3>Chrome</h3>
+                    <p>Install the extension from the <a target="_blank" href="https://chrome.google.com/webstore/detail/mihbljfkecidpfdginghjhfefpgfiilj">Chrome Web Store</a>.</p>
+                    <h3>Firefox</h3>
+                    <p>Install the extension from <a target="_blank" href="https://addons.mozilla.org/en-GB/firefox/addon/footietracker">Add-ons for Firefox</a> page.</p>
+                    <h3>Microsoft Edge</h3>
+                    <p>Install the extension from the <a target="_blank" href="https://microsoftedge.microsoft.com/addons/detail/ilfjnhmcijfdiijapdajncpbelbimjdj">Microsoft Store</a>.</p>
+                    <h3>Safari, Opera and other browsers</h3>
+                    <p>Unfortunately, our extension does not work for these browsers. If you are using a Chromium based browser such as Brave, it should be possible to install the extension via the Chrome Web Store.</p>
+                </div>
+            </section>
+            <section>
+                <h2>Setup</h2>
+                <div>
+                    <p>
+                        The first thing you need to do is login to your Football Index account on <a href="https://www.footballindex.co.uk/" rel="noopener" target="_blank">footballindex.co.uk</a>.
+                        After you have done that, the extension will be able to view your portfolio data whenever it needs to be sent to your spreadsheet.
+                    </p>
+                    <p>
+                        Before you try use the extension, check that you are visiting a page from footballindex.co.uk as the extension only works on pages from their website.
+                    </p>
+                    <h3>Chrome, Edge</h3>
+                    <p>You can open the extension by clicking on the Footietracker logo in your extensions list, which is next to the URL bar.</p>
+                    <h3>Firefox</h3>
+                    <p>The extension can be opened by clicking on the Footietracker logo that can be found to the right of the URL bar (ony while visiting footballindex.co.uk).</p>
+                </div>
+            </section>
+            <section>
+                <h2>Usage</h2>
+                <div>
+                    <p>The interface currently has two buttons: a simplified update button and a full update button.</p>
+                    <h3>Simplified update button</h3>
+                    <p>
+                        The simplified button will update the portfolio sheet of your spreadsheet but will not add your shares' expiration dates to the expiration sheet.
+                        This faster version of the two and it shouldn't take more than a few seconds depending on your Internet connection.
+                    </p>
+                    <h3>Full update button</h3>
+                    <p>
+                        The full update button will update the portfolio sheet as well as the expiration dates of your shares in the expiration sheet.
+                        This will always be the slower version of the two. The duration of the update mainly depends on how many transactions you have made in total.
+                    </p>
+                    <h3>Technical differences between the two buttons</h3>
+                    <p>
+                        The simplified button will update your spreadsheet with the data that's visible on your Football Index portfolio page.
+                        The full update button additionally goes through your transaction history to find your shares purchase dates to calculate their expiration dates and in-play expiration dates.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <script async defer src="https://mysa.footietracker.com/latest.js"></script>
+        <noscript><img src="https://mysa.footietracker.com/noscript.gif" alt=""/></noscript>
+
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    </body>
+</html>

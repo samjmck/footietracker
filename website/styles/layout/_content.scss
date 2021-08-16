@@ -1,0 +1,52 @@
+@import '../modules/main';
+@import '../modules/type';
+@import '../modules/input';
+@import '../modules/button';
+@import '../modules/form';
+@import '../modules/responsive-side-padding';
+@import 'header';
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin-bottom: 1em;
+    }
+
+
+    section {
+        padding-top: 1em;
+    }
+    a, button, section > div, input {
+        margin-bottom: 0.7em;
+    }
+
+    main {
+        @extend %responsive-side-padding;
+        max-width: 1000px;
+
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    label {
+        color: rgba(0, 0, 0, 0.7);
+        margin: 0 0 0.2em 0;
+        display: block;
+    }
+
+    section > div {
+        margin-bottom: 1.1em;
+    }
+
+    input {
+        display: block;
+        min-width: 15em;
+    }
+
+    section:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}

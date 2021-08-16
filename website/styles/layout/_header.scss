@@ -1,0 +1,110 @@
+@import '../modules/responsive-side-padding';
+@import '../modules/variables';
+@import '../modules/colours';
+
+header {
+    @extend %responsive-side-padding;
+
+    height: $header-height-1;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    top: 0;
+
+    div.container {
+        max-width: 1400px;
+
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a.logo {
+        font-weight: 700;
+        font-size: 1.6em;
+        text-decoration: none;
+    }
+
+    span.full-link {
+        display: inline;
+    }
+
+    span.short-link {
+        display: none;
+    }
+
+    span.full-link > span:nth-child(1), span.short-link > span:nth-child(1) {
+        color: #000000;
+    }
+
+    span.full-link > span:nth-child(2), span.short-link > span:nth-child(2) {
+        color: $red-accent;
+    }
+
+    nav.desktop-navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
+    ul.normal-links, ul#user-links {
+        display: flex;
+        flex-direction: row;
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li.desktop-nav-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    li {
+        margin-left: 2em;
+    }
+
+    a {
+        color: $text-grey;
+    }
+
+    a.button {
+        color: #F4F4F4;
+    }
+
+    li.logged-in {
+        display: none;
+    }
+
+    ul.user-links li:last-child {
+        margin: 0 0 0 2em;
+    }
+}
+
+header.fixed {
+    position: fixed;
+    background-color: #fdfdfd;
+}
+
+@media screen and (max-width: 900px) {
+    header nav.desktop-navigation {
+        display: none;
+    }
+
+    header div.container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: $header-step-2) {
+    header {
+        height: $header-height-2;
+    }
+}

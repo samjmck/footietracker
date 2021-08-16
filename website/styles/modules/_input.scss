@@ -1,0 +1,18 @@
+@import 'colours';
+
+input {
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  color: $text-black;
+  padding: 0.4em;
+  font-size: inherit;
+}
+input:focus {
+  border: 2px solid #dcdcdc;
+}
+::placeholder {
+  color: #cdcdcd;
+  font-weight: 300;
+}

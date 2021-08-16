@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <clipPath id="clip-Logo">
+      <rect width="1024" height="1024"/>
+    </clipPath>
+  </defs>
+  <g id="Logo" clip-path="url(#clip-Logo)">
+    <text id="Footietracker" transform="translate(65 525)" fill="#ff3951" font-size="140" font-family="SourceSansPro-Black, Source Sans Pro" font-weight="800" letter-spacing="0.025em"><tspan x="0" y="0" fill="#000">Footie</tspan><tspan y="0" fill="#ff3951">tracker</tspan></text>
+  </g>
+</svg>

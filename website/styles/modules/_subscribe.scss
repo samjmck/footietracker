@@ -1,0 +1,32 @@
+div.subscribe {
+  max-width: 700px;
+  margin: 0 auto;
+
+  div.pricing {
+    position: relative;
+    text-align: center;
+  }
+  p.cost {
+    position: relative;
+  }
+  span.price.original {
+    position: absolute;
+    top: -100%;
+    text-decoration: line-through;
+  }
+  span.price {
+    font-size: 1.3em;
+  }
+  span.frequency {
+    color: $text-grey;
+  }
+  p.referral {
+    font-size: 0.95em;
+    color: rgba(0, 0, 0, .7);
+  }
+  ul.features {
+    font-size: 1.05em;
+    padding: 0 0 0 1.7em;
+    list-style-image: url(/assets/images/check-circle.svg);
+  }
+}

@@ -1,0 +1,7 @@
+FROM node:10
+WORKDIR /home/app/services/dividends
+COPY services/dividends/ /home/app/services/dividends
+COPY shared/ /home/app/shared
+RUN npm install
+RUN ./node_modules/typescript/bin/tsc
+CMD [ "npm", "run", "start" ]

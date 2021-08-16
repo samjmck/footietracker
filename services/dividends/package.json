@@ -1,0 +1,26 @@
+{
+   "author": "Sam Mckenzie",
+   "scripts": {
+      "build": "tsc",
+      "bas": "echo 'DEVELOPMENT MODE'; tsc; NODE_ENV=development node dist/services/dividends/src/main",
+      "start": "echo 'PRODUCTION MODE'; NODE_ENV=production node --max_old_space_size=500 dist/services/dividends/src/main",
+      "startdev": "echo 'DEVELOPMENT MODE'; NODE_ENV=development dist/services/dividends/src/main",
+      "lint": "./node_modules/.bin/tslint --project tsconfig.json --force",
+      "lintfix": "./node_modules/.bin/tslint --project tsconfig.json --fix --force"
+   },
+   "devDependencies": {
+      "@types/dotenv": "^6.1.1",
+      "@types/mongodb": "^3.1.32",
+      "@types/node": "^11.13.4",
+      "@types/node-cron": "^2.0.2",
+      "typescript": "^3.8.3"
+   },
+   "dependencies": {
+      "cote": "^0.20.0",
+      "dotenv": "^8.0.0",
+      "handy-redis": "^1.5.2",
+      "moment": "^2.24.0",
+      "mongodb": "^3.2.7",
+      "node-cron": "^2.0.3"
+   }
+}

@@ -1,0 +1,4 @@
+/pricing /#pricing 302
+/home / 301
+/register /register/create-account 301
+/api/* https://dev.api.footietracker.com/:splat 200

@@ -1,0 +1,9 @@
+FROM node:10
+WORKDIR /home/app/services/users
+COPY services/users/ /home/app/services/users
+COPY shared/ /home/app/shared
+RUN npm install
+RUN ./node_modules/typescript/bin/tsc
+EXPOSE 8080
+EXPOSE 443
+CMD [ "npm", "run", "start" ]

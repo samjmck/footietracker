@@ -1,0 +1,23 @@
+html {
+    background-color: #fdfdfd;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: inherit;
+    color: blue;
+}
+input, input:active, input:focus {
+    outline: 0;
+}
+button, button:active, button:focus{
+    outline: 0;
+    border: 0;
+}

@@ -1,0 +1,12 @@
+$header-height-1: 100px;
+
+@function calculate-header-absolute-height-1() {
+  @return $header-height-1;
+}
+
+$header-height-2: 60px;
+$header-step-2: 500px;
+
+@function calculate-header-absolute-height-2() {
+  @return $header-height-2;
+}

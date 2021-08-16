@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  users:
+    image: samjmck/footietracker-users:latest
+    network_mode: host
+    depends_on:
+      - footietracker-spreadsheets
+    ports:
+      - 443:443
+  spreadsheets:
+    image: samjmck/footietracker-spreadsheets:latest
+    depends_on:
+      - footietracker-pricing
+      - footietracker-dividends
+    network_mode: host
+  dividends:
+    image: samjmck/footietracker-dividends:latest
+    network_mode: host
+  pricing:
+    image: samjmck/footietracker-pricing:latest
+    network_mode: host

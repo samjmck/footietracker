@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"jsx": "react",
+		"target": "es6",
+		"module": "ESNext",
+		"outDir": "./dist",
+		"lib": ["es2017", "dom"],
+		"sourceMap": true,
+		"alwaysStrict": true,
+		"moduleResolution": "node",
+		"noImplicitAny": true
+	},
+	"include": [
+		"./pages/"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

@@ -1,0 +1,8 @@
+FROM node:10
+WORKDIR /home/app/services/pricing
+COPY services/pricing/ /home/app/services/pricing
+COPY shared/ /home/app/shared
+RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm install
+RUN cd /home/app/shared/backend; npm install
+RUN ./node_modules/typescript/bin/tsc
+CMD [ "npm", "run", "start" ]

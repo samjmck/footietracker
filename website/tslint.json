@@ -1,0 +1,66 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint-config-airbnb"],
+    "rules": {
+        "interface-name": [true, "always-prefix"],
+        "ter-arrow-parens": [
+            true,
+            "as-needed",
+            { "requireForBlockBody": false }
+        ],
+        "variable-name": [true, "check-format", "allow-leading-underscore"],
+        "ter-indent": [true, 4, { "SwitchCase": 1 }],
+        "max-line-length": [false],
+        "no-increment-decrement": [false],
+        "object-literal-shorthand": [false],
+        "object-shorthand-properties-first": [false],
+        "object-literal-key-quotes": [false],
+        "indent": [true, "spaces", 4],
+        "quotemark": [true, "single"],
+        "align": [false],
+        "member-ordering": [
+            true,
+            {
+                "order": [
+                    "public-static-field",
+                    "private-static-field",
+                    "protected-static-field",
+                    "public-instance-field",
+                    "private-instance-field",
+                    "protected-instance-field",
+                    "public-constructor",
+                    "private-constructor",
+                    "protected-constructor"
+                ]
+            }
+        ],
+        "whitespace": [
+            true,
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-rest-spread",
+            "check-type",
+            "check-preblock",
+            "check-module",
+            "check-typecast"
+        ],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            },
+            {
+                "call-signature": "onespace",
+                "index-signature": "onespace",
+                "parameter": "onespace",
+                "property-declaration": "onespace",
+                "variable-declaration": "onespace"
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+@import '../modules/main';
+@import '../modules/type';
+@import '../modules/input';
+@import '../modules/button';
+@import '../layout/header';
+
+main {
+  @extend %responsive-side-padding;
+
+  text-align: center;
+}

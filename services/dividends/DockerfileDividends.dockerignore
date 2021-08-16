@@ -1,0 +1,4 @@
+services/dividends/node_modules
+services/dividends/dist
+shared/backend/node_modules
+shared/backend/dist

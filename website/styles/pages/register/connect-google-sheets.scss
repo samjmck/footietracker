@@ -1,0 +1,49 @@
+@import '../../layout/content';
+
+main {
+    max-width: 1000px;
+
+    div#google-continue {
+        position: relative;
+        top: 10px;
+        height: 42px;
+        background-color: #f9f9f9;
+        border-radius: 2px;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+        cursor: pointer;
+        align-self: center;
+        user-select: none;
+        transition: all 400ms ease 0s;
+        display: flex;
+
+        div.wrapper {
+            position: absolute;
+            margin-top: 1px;
+            margin-left: 1px;
+            width: 40px;
+            height: 40px;
+            border-radius: 2px;
+            user-select: none;
+
+            img {
+                position: absolute;
+                margin-top: 11px;
+                margin-left: 11px;
+                width: 18px;
+                height: 18px;
+                user-select: none;
+            }
+        }
+
+        p {
+            float: right;
+            margin: 11px 14px 40px 40px;
+            color: #757575;
+            font-size: 14px;
+            letter-spacing: .2px;
+            font-family: 'Roboto', sans-serif;
+            user-select: none;
+            line-height: 20px;
+        }
+    }
+}

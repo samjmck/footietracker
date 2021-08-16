@@ -1,0 +1,26 @@
+@import '../modules/main';
+@import '../modules/type';
+@import '../layout/header';
+
+main {
+  font-family: 'Roboto', sans-serif;
+  padding: 0 10vw;
+  letter-spacing: initial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: initial;
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-size: 1.2em;
+}
+
+h2 {
+  margin: 40px 0 0 0;
+}
+
+h3 {
+  font-size: 1.1em;
+}

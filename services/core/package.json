@@ -1,0 +1,45 @@
+{
+   "author": "Sam Mckenzie",
+   "scripts": {
+      "build": "tsc",
+      "bas": "echo 'DEVELOPMENT MODE'; tsc; NODE_ENV=development node dist/services/core/src/main",
+      "start": "echo 'PRODUCTION MODE'; NODE_ENV=production node dist/services/core/src/main",
+      "startdev": "echo 'DEVELOPMENT MODE'; NODE_ENV=development dist/services/core/src/main"
+   },
+   "devDependencies": {
+      "@types/amqplib": "^0.5.13",
+      "@types/bcryptjs": "^2.4.2",
+      "@types/body-parser": "^1.19.0",
+      "@types/cookie-parser": "^1.4.2",
+      "@types/dotenv": "^6.1.1",
+      "@types/express": "^4.17.1",
+      "@types/helmet": "0.0.44",
+      "@types/jsonwebtoken": "^8.3.3",
+      "@types/node": "^11.15.21",
+      "@types/node-cron": "^2.0.3",
+      "@types/pg": "^7.14.3",
+      "typescript": "^3.8.3"
+   },
+   "dependencies": {
+      "@sendgrid/mail": "^7.1.1",
+      "amqplib": "^0.5.6",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.19.0",
+      "cookie-parser": "^1.4.4",
+      "dotenv": "^8.0.0",
+      "express": "^4.17.1",
+      "googleapis": "^59.0.0",
+      "handy-redis": "^1.8.3",
+      "helmet": "^3.21.0",
+      "jsonwebtoken": "^8.5.1",
+      "node-cron": "^2.0.3",
+      "pg": "^8.0.3",
+      "puppeteer": "^5.2.1",
+      "puppeteer-extra": "^3.1.15",
+      "puppeteer-extra-plugin-adblocker": "^2.11.6",
+      "puppeteer-extra-plugin-stealth": "^2.6.1",
+      "stripe": "^8.90.0",
+      "uuid": "^8.1.0",
+      "winston": "^3.3.3"
+   }
+}
